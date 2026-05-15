@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>👤 Profile</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="task.html">Tasks</a>
+      <a href="profile.html">Profile</a>
+      <a href="streak.html">Streak</a>
+      <a href="calendar.html">Calendar</a>
+    </div>
+  </div>
+
+  <!-- Profile Card -->
+  <div class="card profile-card">
+
+    <h2>🎮 Your Identity</h2>
+
+    <div class="avatar-section">
+      <img id="avatar" src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="avatar">
+    </div>
+
+    <input type="text" id="username" placeholder="Enter your name...">
+    <button onclick="saveProfile()">💾 Save</button>
+
+    <h3 id="displayName"></h3>
+
+    <p id="levelDisplay"></p>
+
+  </div>
+
+  <!-- Avatar Selection -->
+  <div class="card avatar-options">
+
+    <h2>🎭 Choose Avatar</h2>
+
+    <div class="avatar-grid">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" onclick="selectAvatar(this.src)">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" onclick="selectAvatar(this.src)">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" onclick="selectAvatar(this.src)">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" onclick="selectAvatar(this.src)">
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

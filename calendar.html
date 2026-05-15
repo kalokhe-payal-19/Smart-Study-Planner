@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar - Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>📅 Calendar</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="task.html">Tasks</a>
+      <a href="profile.html">Profile</a>
+      <a href="streak.html">Streak</a>
+      <a href="calendar.html">Calendar</a>
+    </div>
+  </div>
+
+  <!-- Calendar Card -->
+  <div class="card calendar-card">
+
+    <div class="calendar-header">
+      <button onclick="prevMonth()">⬅</button>
+      <h2 id="monthYear"></h2>
+      <button onclick="nextMonth()">➡</button>
+    </div>
+
+    <div class="calendar-grid" id="calendar"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

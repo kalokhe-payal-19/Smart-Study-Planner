@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Streak - Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>🔥 Smart Study Planner</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="task.html">Tasks</a>
+      <a href="profile.html">Profile</a>
+      <a href="streak.html">Streak</a>
+      <a href="calendar.html">Calendar</a>
+    </div>
+  </div>
+
+  <!-- Streak Display -->
+  <div class="card">
+    <h2 id="streakCount">🔥 Current Streak: 0</h2>
+    <p id="streakStatus">Stay consistent to grow your streak 🚀</p>
+  </div>
+
+  <!-- Action Section -->
+  <div class="card" id="streakActions" style="display:none;">
+    <h3>⚠️ Streak Broken!</h3>
+    <p>You missed a day 😬 What do you want to do?</p>
+
+    <button onclick="restoreStreak()">💪 Restore (Hard Task)</button>
+    <button onclick="resetStreak()">❌ Quit</button>
+  </div>
+
+  <!-- Motivation Card -->
+  <div class="card">
+    <h3>💡 Motivation</h3>
+    <p id="motivationText">"Small steps daily lead to big success."</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

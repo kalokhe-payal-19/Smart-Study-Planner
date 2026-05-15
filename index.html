@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>📘 Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h2>👋 Welcome Back!</h2>
+      <p id="welcomeMsg"></p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>📘 Smart Study Planner</h1>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks...">
+        <button onclick="searchTasks()">🔍</button>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="task.html">Tasks</a>
+        <a href="profile.html">Profile</a>
+        <a href="streak.html">Streak</a>
+        <a href="calendar.html">Calendar</a>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="card">
+      <h2>📊 Daily Progress</h2>
+      <div class="graph-container">
+        <div id="graph"></div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+      <h2>📁 My Projects</h2>
+      <div id="projects" class="horizontal-list"></div>
+    </div>
+
+    <!-- Today's Tasks -->
+    <div class="card">
+      <h2>✅ Today's Tasks</h2>
+      <div id="todayTasks" class="horizontal-list"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
